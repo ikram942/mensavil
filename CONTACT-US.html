@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensavil</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+
+<!-- 🔝 NAVBAR -->
+<header class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <h1 class="logo">Mensavil</h1>
+</div>
+
+
+</header>
+
+<!-- 📌 SIDEBAR MENU LUXE -->
+<div id="sidebar" class="sidebar">
+
+    <!-- Top (close button) -->
+    <div class="sidebar-header">
+        <span class="close-btn" onclick="toggleMenu()">
+            <i class="fas fa-times"></i>
+        </span>
+    </div>
+
+    <!-- Menu links -->
+    <div class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="PRODUCTS.html">Products</a>
+        <a href="TUTORIALS.html">Tutorials</a>
+        <a href="MANAGE-SUBSCRIPTION.html">Manage Subscription</a>
+        <a href="CONTACT-US.html">Contact Us</a>
+    </div>
+
+    <!-- Country -->
+<div class="country-select">
+    <div id="countryBtn" class="country-btn" onclick="toggleCountry()">
+        🌍 MOROCCO (MAD د.م)
+        <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <div id="countryDropdown" class="country-dropdown">
+        <div onclick="selectCountry('Morocco (MAD د.م)')">🇲🇦 Morocco (MAD)</div>
+        <div onclick="selectCountry('France (EUR €)')">🇫🇷 France (EUR)</div>
+        <div onclick="selectCountry('USA (USD $)')">🇺🇸 USA (USD)</div>
+        <div onclick="selectCountry('Spain (EUR €)')">🇪🇸 Spain (EUR)</div>
+        <div onclick="selectCountry('UAE (AED د.إ)')">🇦🇪 UAE (AED)</div>
+    </div>
+</div>
+
+
+    <!-- Login -->
+    <div class="login">
+        <i class="far fa-user"></i>
+        <span>Log in</span>
+    </div>
+      <!-- Center: Social Media -->
+    <div class="socials">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.whatsapp.com" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" class="social-icon tiktok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+    
+   
+
+<!-- Footer / Bottom Menu -->
+<div class="bottom-bar">
+
+    <!-- Left: Copyright -->
+    <div class="bottom-left">
+        © 2026, MenSavil. All rights reserved.
+    </div>
+
+</div>
+
+</div>
+
+
+
+<!-- Overlay -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+    <section class="hero-slider">
+
+    <!-- Navigation bars -->
+    <div class="slider-nav">
+        <span class="bar active" onclick="showSlide(0)"></span>
+        <span class="bar" onclick="showSlide(1)"></span>
+    </div>
+    </section>
+    <section class="hero">
+    <div class="overlay"></div>
+
+    <div class="slide active" style="background-image:url('ks.jpeg');">
+        <div class="overlay"></div>
+        <div class="content">
+        <h1>Contact Us</h1>
+        <p>
+            We're here to help! Whether you have a question,
+            feedback, or just want to say hello,
+            we'd love to hear from you.
+        </p>
+        <button>Send Message</button>
+    </div>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="contact-container">
+
+        <!-- LEFT FORM -->
+        <div class="contact-form">
+            <h2>Get in touch</h2>
+
+            <form id="contactForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone number">
+                <textarea placeholder="Comment"></textarea>
+
+                <button type="submit">SEND MESSAGE</button>
+
+                <p class="captcha">
+                    This site is protected by hCaptcha and the
+                    <a href="#">Privacy Policy</a> and
+                    <a href="#">Terms of Service</a> apply.
+                </p>
+            </form>
+        </div>
+
+        <!-- RIGHT INFO -->
+        <div class="contact-info">
+            <div class="info-block">
+                <h4>Email Us</h4>
+                <p>savil@outlouk.com</p>
+            </div>
+
+            <div class="info-block">
+                <h4>Call Us</h4>
+                <p>0600000000</p>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+
+<script src="contactus.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensavil</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="produit.css">
+</head>
+<body>
+
+<!-- 🔝 NAVBAR -->
+<header class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <h1 class="logo">Mensavil</h1>
+    <!-- ICONS -->
+<div class="icons">
+    <button class="icon-btn" id="searchBtn">
+        <i class="fas fa-search"></i>
+    </button>
+
+    <button class="icon-btn" id="cartBtn">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+    <button class="icon-btn" id="userBtn">
+        <i class="fa-solid fa-user"></i>
+    </button>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div id="searchOverlay" class="search-overlay">
+    <div class="search-content">
+        <input type="text" placeholder="Search products...">
+        <span id="closeSearch">✕</span>
+    </div>
+</div>
+<!-- LOGIN MODAL -->
+<div class="auth-overlay" id="authOverlay">
+
+  <div class="auth-box">
+
+    <h2 class="brand">MenSavil</h2>
+
+    <h3>Sign in</h3>
+    <p class="subtitle">Sign in or create an account</p>
+
+    <!-- Google button (design only) -->
+    <button class="google-btn" disabled>
+      Continue with Google
+    </button>
+
+    <div class="divider">
+      <span></span>
+      <small>or</small>
+      <span></span>
+    </div>
+
+    <input type="email" placeholder="Email">
+
+    <button class="continue-btn">Continue</button>
+
+    <div class="auth-footer">
+      <a href="#">Privacy policy</a>
+      <a href="#">Terms of service</a>
+    </div>
+
+    <span class="close-auth" id="closeAuth">&times;</span>
+
+  </div>
+
+<!-- CART PANEL -->
+<div id="cartPanel" class="cart-panel">
+    <div class="cart-header">
+        <h3>Cart</h3>
+        <span id="closeCart">✕</span>
+    </div>
+
+    <div class="cart-body">
+        <p>Your cart is empty</p>
+    </div>
+</div>
+
+</header>
+    <div class="container">
+
+<header class="top">
+  <h1>Best Sellers</h1>
+  <p>100% Money Back Guarantee, if our products do not make you look better!</p>
+</header>
+
+<div class="shop">
+
+  <!-- PRODUCTS -->
+  <section class="content">
+
+    <div class="toolbar">
+      <span>22 products</span>
+      <select>
+        <option>SORT BY</option>
+        <option>Best sellers</option>
+        <option>Price: low to high</option>
+        <option>Price: high to low</option>
+      </select>
+    </div>
+
+    <div class="products">
+      
+      <a href="creme.html" class="product-link">
+      <div class="card" data-name="KS Hair Cream">
+        <img src="creme.png">
+        <h4>KS Hair Cream - Fixation Forte & Fini Naturel (100ml)</h4>
+        <p class="muted"></p>
+        <span class="price">70 dh</span>
+      </div>
+      </a>
+
+      <a href="shampo.html" class="product-link">
+      <div class="card" data-name="KS Shampoing Fortifiant">
+        <img src="champo.png">
+        <h4>KS Shampoing Fortifiant - Force & Vitalité</h4>
+        <span class="price">100 dh</span>
+      </div>
+      </a>
+
+      <a href="apres-shampo.html" class="product-link">
+      <div class="card" data-name="KS Hair Shampoo">
+        <img src="apres-champo.png">
+        <h4>KS Hair Shampoo - Protection & Hydratation Intense </h4>
+        <span class="price">70 dh</span>
+      </div>
+      </a>
+
+     <a href="huil.html" class="product-link">
+  <div class="card" data-name="KS Hair & Beard Oil">
+    <img src="huile.png" alt="KS Hair & Beard Oil">
+    <h4>KS Hair & Beard Oil - Hydrating Formula </h4>
+    <span class="price">199 dh</span>
+  </div>
+</a>
+<a href="gel.html" class="product-link">
+  <div class="card" data-name="KS Hair Gel">
+    <img src="gel.jpg" alt="KS Hair Gel">
+    <h4>KS Hair Gel - Fixation Forte & Brillance</h4>
+    <span class="price">60 dh</span>
+  </div>
+</a>
+      <a href="spray.html" class="product-link">  
+      <div class="card" data-name="KS Hair Growth Spray">
+        <img src="spryt.png">
+        <h4>KS Hair Growth Spray - Formule Stimulante</h4>
+        <span class="price">60 dh</span>
+      </div>
+    </div>
+    </a>
+  </section>
+</div>
+    </div>
+<script src="produit.js"></script>
+</body>
+</html>

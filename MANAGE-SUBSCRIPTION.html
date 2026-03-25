@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign in - MenSavil</title>
+  <link rel="stylesheet" href="login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.shop-btn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(90deg, #5f2eea, #6c4dff);
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.shop-btn:hover {
+  opacity: 0.9;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider p {
+  margin: 0 10px;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: 2px solid black;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.continue-btn:hover {
+  opacity: 0.85;
+}
+
+.links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+
+  @media (max-width: 600px) {
+
+  .login-container {
+    max-width: 100%;
+    padding: 30px 20px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  body {
+    background: white;
+  }
+
+}
+}
+  </style>
+<body>
+
+<div class="login-container">
+
+  <h1 class="brand">MenSavil</h1>
+
+  <h2>Sign in</h2>
+  <p class="subtitle">Sign in or create an account</p>
+
+  <button class="shop-btn">
+    Continue with <strong>Google Chrome</strong>
+  </button>
+
+  <div class="divider">
+    <span></span>
+    <p>or</p>
+    <span></span>
+  </div>
+
+  <input type="email" placeholder="Email">
+
+  <button class="continue-btn">Continue</button>
+
+  <div class="links">
+    <a href="#">Privacy policy</a>
+    <a href="#">Terms of service</a>
+  </div>
+
+</div>
+
+</body>
+</html>
