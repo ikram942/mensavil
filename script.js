@@ -181,3 +181,43 @@ mobileMenu.classList.add("active");
 closeMenu.onclick = () =>{
 mobileMenu.classList.remove("active");
 }
+const aiBotBtn = document.getElementById("aiBotBtn");
+const aiBotContainer = document.getElementById("aiBotContainer");
+const aiBotClose = document.getElementById("aiBotClose");
+const aiBotSend = document.getElementById("aiBotSend");
+const aiBotInput = document.getElementById("aiBotInput");
+const aiBotMessages = document.getElementById("aiBotMessages");
+
+// Ouvrir le chatbot
+aiBotBtn.addEventListener("click", () => {
+    aiBotContainer.style.display = "flex";
+});
+
+// Fermer le chatbot
+aiBotClose.addEventListener("click", () => {
+    aiBotContainer.style.display = "none";
+});
+
+// Envoyer message
+aiBotSend.addEventListener("click", () => {
+    const userText = aiBotInput.value.trim();
+    if (!userText) return;
+
+    // Ajouter message utilisateur
+    const userMsgDiv = document.createElement("div");
+    userMsgDiv.classList.add("user-msg");
+    userMsgDiv.textContent = userText;
+    aiBotMessages.appendChild(userMsgDiv);
+
+    aiBotInput.value = "";
+    aiBotMessages.scrollTop = aiBotMessages.scrollHeight;
+
+    // Réponse IA simulée
+    setTimeout(() => {
+        const botMsgDiv = document.createElement("div");
+        botMsgDiv.classList.add("bot-msg");
+        botMsgDiv.textContent = "Merci pour votre message ! Je suis votre assistant IA.";
+        aiBotMessages.appendChild(botMsgDiv);
+        aiBotMessages.scrollTop = aiBotMessages.scrollHeight;
+    }, 800);
+});

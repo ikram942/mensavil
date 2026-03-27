@@ -19,16 +19,17 @@
 
     <h1 class="logo">Mensavil</h1>
     <!-- ICONS -->
-<div class="icons">
+<div class="search-container">
     <button class="icon-btn" id="searchBtn">
         <i class="fas fa-search"></i>
     </button>
 
+    <button class="icon-btn" id="loginBtn">
+        <i class="fas fa-user"></i>
+    </button>
+
     <button class="icon-btn" id="cartBtn">
         <i class="fa-solid fa-cart-shopping"></i>
-    </button>
-    <button class="icon-btn" id="userBtn">
-        <i class="fa-solid fa-user"></i>
     </button>
 </div>
 
@@ -39,39 +40,6 @@
         <span id="closeSearch">✕</span>
     </div>
 </div>
-<!-- LOGIN MODAL -->
-<div class="auth-overlay" id="authOverlay">
-
-  <div class="auth-box">
-
-    <h2 class="brand">MenSavil</h2>
-
-    <h3>Sign in</h3>
-    <p class="subtitle">Sign in or create an account</p>
-
-    <!-- Google button (design only) -->
-    <button class="google-btn" disabled>
-      Continue with Google
-    </button>
-
-    <div class="divider">
-      <span></span>
-      <small>or</small>
-      <span></span>
-    </div>
-
-    <input type="email" placeholder="Email">
-
-    <button class="continue-btn">Continue</button>
-
-    <div class="auth-footer">
-      <a href="#">Privacy policy</a>
-      <a href="#">Terms of service</a>
-    </div>
-
-    <span class="close-auth" id="closeAuth">&times;</span>
-
-  </div>
 
 <!-- CART PANEL -->
 <div id="cartPanel" class="cart-panel">
@@ -84,8 +52,89 @@
         <p>Your cart is empty</p>
     </div>
 </div>
-
+<!-- Overlay / Modal -->
+<div id="loginOverlay" class="overlay">
+    <div class="overlay-content">
+        <span id="closeOverlay" class="close-btn">&times;</span>
+        <h2>Connexion</h2>
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Mot de passe">
+        <button class="submit-btn">Se connecter</button>
+    </div>
+</div>
 </header>
+<!-- 📌 SIDEBAR MENU LUXE -->
+<div id="sidebar" class="sidebar">
+
+    <!-- Top (close button) -->
+    <div class="sidebar-header">
+        <span class="close-btn" onclick="toggleMenu()">
+            <i class="fas fa-times"></i>
+        </span>
+    </div>
+
+    <!-- Menu links -->
+    <div class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="PRODUCTS.html">Products</a>
+        <a href="TUTORIALS.html">Tutorials</a>
+        <a href="MANAGE-SUBSCRIPTION.html">Manage Subscription</a>
+        <a href="CONTACT-US.html">Contact Us</a>
+    </div>
+
+    <!-- Country -->
+<div class="country-select">
+    <div class="country-btn" onclick="toggleCountry()">
+        🌍 MOROCCO (MAD د.م)
+        <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <div id="countryDropdown" class="country-dropdown">
+        <div onclick="selectCountry('Morocco (MAD د.م)')">🇲🇦 Morocco (MAD)</div>
+        <div onclick="selectCountry('France (EUR €)')">🇫🇷 France (EUR)</div>
+        <div onclick="selectCountry('USA (USD $)')">🇺🇸 USA (USD)</div>
+        <div onclick="selectCountry('Spain (EUR €)')">🇪🇸 Spain (EUR)</div>
+        <div onclick="selectCountry('UAE (AED د.إ)')">🇦🇪 UAE (AED)</div>
+    </div>
+</div>
+
+    <!-- Login -->
+    <div class="login">
+        <i class="far fa-user"></i>
+        <span>Log in</span>
+    </div>
+      <!-- Center: Social Media -->
+    <div class="socials">
+        <a href="https://www.facebook.com/share/1CTE4tAxzr/?mibextid=wwXIfr" target="_blank" class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/savilmen?igsh=MWd6aDZpbG5mamI0bw%3D%3D&utm_source=qr" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.whatsapp.com" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.tiktok.com/@mensavil7" target="_blank" class="social-icon tiktok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+<!-- Footer / Bottom Menu -->
+<div class="bottom-bar">
+
+    <!-- Left: Copyright -->
+ <footer>
+  <div class="scroll-container">
+    <p class="scroll-text">
+      © 2026 MenSavil — Tous droits réservés • Produits cosmétiques premium
+    </p>
+  </div>
+ </footer>
+</div>
+</div>
+<!-- Overlay -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<body>
     <div class="container">
 
 <header class="top">
@@ -99,7 +148,7 @@
   <section class="content">
 
     <div class="toolbar">
-      <span>22 products</span>
+      <span>6 products</span>
       <select>
         <option>SORT BY</option>
         <option>Best sellers</option>
@@ -160,6 +209,7 @@
   </section>
 </div>
     </div>
+</body>
 <script src="produit.js"></script>
 </body>
 </html>

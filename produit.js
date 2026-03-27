@@ -51,6 +51,29 @@ function scrollGallery(direction){
     behavior: "smooth"
   });
 }
+const loginBtn = document.getElementById("loginBtn");
+const loginOverlay = document.getElementById("loginOverlay");
+const closeOverlay = document.getElementById("closeOverlay");
+
+// Ouvrir l'overlay
+loginBtn.addEventListener("click", () => {
+    loginOverlay.style.display = "flex";
+    setTimeout(() => loginOverlay.classList.add("show"), 10); // effet animation
+});
+
+// Fermer l'overlay
+closeOverlay.addEventListener("click", () => {
+    loginOverlay.classList.remove("show");
+    setTimeout(() => loginOverlay.style.display = "none", 400);
+});
+
+// Fermer si clic en dehors du modal
+window.addEventListener("click", (e) => {
+    if (e.target === loginOverlay) {
+        loginOverlay.classList.remove("show");
+        setTimeout(() => loginOverlay.style.display = "none", 400);
+    }
+});
 
 const countries = [
     {name:"Maroc", currency:"MAD", flag:"🇲🇦"},

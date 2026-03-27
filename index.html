@@ -19,7 +19,7 @@
 
     <h1 class="logo">Mensavil</h1>
     <!-- ICONS -->
-<div class="icons">
+<div class="search-container">
     <button class="icon-btn" id="searchBtn">
         <i class="fas fa-search"></i>
     </button>
@@ -93,36 +93,32 @@
     </div>
       <!-- Center: Social Media -->
     <div class="socials">
-        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+        <a href="https://www.facebook.com/share/1CTE4tAxzr/?mibextid=wwXIfr" target="_blank" class="social-icon facebook">
             <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+        <a href="https://www.instagram.com/savilmen?igsh=MWd6aDZpbG5mamI0bw%3D%3D&utm_source=qr" target="_blank" class="social-icon instagram">
             <i class="fab fa-instagram"></i>
         </a>
         <a href="https://www.whatsapp.com" target="_blank" class="social-icon whatsapp">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="https://www.tiktok.com" target="_blank" class="social-icon tiktok">
+        <a href="https://www.tiktok.com/@mensavil7" target="_blank" class="social-icon tiktok">
             <i class="fab fa-tiktok"></i>
         </a>
     </div>
-    
-   
-
 <!-- Footer / Bottom Menu -->
 <div class="bottom-bar">
 
     <!-- Left: Copyright -->
-    <div class="bottom-left">
-        © 2026, MenSavil. All rights reserved.
-    </div>
-
+ <footer>
+  <div class="scroll-container">
+    <p class="scroll-text">
+      © 2026 MenSavil — Tous droits réservés • Produits cosmétiques premium
+    </p>
+  </div>
+ </footer>
 </div>
-
 </div>
-
-
-
 <!-- Overlay -->
 <div id="overlay" onclick="toggleMenu()"></div>
 
@@ -143,18 +139,17 @@
             <h1>Best-Sellers</h1>
          <p>Essentiels de toilettage masculin haut de gamme — <br>
         dignes de confiance par plus de 100 000 hommes</b>.</p>
-            <a href="#" class="btn">ENSEMBLES DE MAGASINS</a>
+            <a href="#products.html" class="btn">ENSEMBLES DE MAGASINS</a>
         </div>
     </div>
 
     <!-- Slide 2 -->
     <div class="slide" style="background-image:url('krm.jpeg');">
-    <div class="slide" style="background-image:url('img1.jpeg');">
         <div class="overlay"></div>
         <div class="content">
             <h1>Soins &<br>Barbe <br>Premium</h1>
             <p>Des produits naturels pour un style élégant et moderne.</p>
-            <a href="#" class="btn">DÉCOUVRIR</a>
+            <a href="#products" class="btn">DÉCOUVRIR</a>
         </div>
     </div>
 
@@ -196,7 +191,7 @@
     <img src="champo.png" alt="">
     <h3>Natural Shampoo</h3>
     <p>Cleanses and strengthens the hair</p>
-    <span class="price">149 MAD</span>
+    <span class="price">100 MAD</span>
 </div>
 
 <!-- Product 2 -->
@@ -204,7 +199,7 @@
     <img src="apres-champo.png" alt="">
     <h3>Conditioner</h3>
     <p>Hydration and shine</p>
-    <span class="price">129 MAD</span>
+    <span class="price">70 MAD</span>
 </div>
 
 <!-- Product 3 -->
@@ -212,7 +207,7 @@
     <img src="huile.png" alt="">
     <h3>Beard Oil</h3>
     <p>Softens and perfumes</p>
-    <span class="price">99 MAD</span>
+    <span class="price">199 MAD</span>
 </div>
 
 <!-- Product 4 -->
@@ -220,7 +215,7 @@
     <img src="spryt.png" alt="">
     <h3>Beard Spray</h3>
     <p>Softens and perfumes</p>
-    <span class="price">99 MAD</span>
+    <span class="price">60 MAD</span>
 </div>
 
 <!-- Product 5 -->
@@ -228,7 +223,7 @@
     <img src="creme.png" alt="Hair Cream">
     <h3>Hair Cream</h3>
     <p>Nourishes and styles naturally</p>
-    <span class="price">149 MAD</span>
+    <span class="price">70 MAD</span>
 </div>
 
 <!-- Product 6 -->
@@ -236,7 +231,7 @@
     <img src="gel.jpg" alt="Hair Gel">
     <h3>Hair gel</h3>
     <p>Nourishes and styles naturally</p>
-    <span class="price">149 MAD</span>
+    <span class="price">60 MAD</span>
 </div>
     </div>
 
@@ -245,24 +240,39 @@
 </body>
 <div class="social-media">
 
-<a href="https://instagram.com" target="_blank">
+<a href="https://www.instagram.com/savilmen?igsh=MWd6aDZpbG5mamI0bw%3D%3D&utm_source=qr" target="_blank">
 <i class="fa-brands fa-instagram"></i>
 </a>
 
-<a href="https://facebook.com" target="_blank">
+<a href="https://www.facebook.com/share/1CTE4tAxzr/?mibextid=wwXIfr" target="_blank">
 <i class="fa-brands fa-facebook"></i>
 </a>
 
-<a href="https://tiktok.com" target="_blank">
+<a href="https://www.tiktok.com/@mensavil7" target="_blank">
 <i class="fa-brands fa-tiktok"></i>
-</a>
-
-<a href="https://youtube.com" target="_blank">
-<i class="fa-brands fa-youtube"></i>
 </a>
 
 </div>
 </body>
+<!-- Bouton flottant pour IA -->
+<button id="aiBotBtn">
+    <i class="fas fa-robot"></i>
+</button>
+
+<!-- Chatbot flottant -->
+<div id="aiBotContainer">
+    <div id="aiBotHeader">
+        <span>Assistant</span>
+        <span id="aiBotClose">&times;</span>
+    </div>
+    <div id="aiBotMessages">
+        <div class="bot-msg">Bonjour ! Comment puis-je vous aider ?</div>
+    </div>
+    <div id="aiBotInputArea">
+        <input type="text" id="aiBotInput" placeholder="Écrivez un message..." />
+        <button id="aiBotSend"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
